@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /* ===== Colors ===== */
+  --primary-color: #002247;
+  --secondary-color: #fdf8e9;
+  --secondary2-color: #fefcf5;
+  --tertiary-color: #e9b207;
+  --text-color: #1c1a1a;
+
+  /* ========== Font and typography ========== */
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 39px;
+  --h2-font-size: 31px;
+  --h3-font-size: 25px;
+  --h4-font-size: 20px;
+  --h5-font-size: 16px;
+  --h6-font-size: 13px;
+  --h7-font-size: 10px;
+
+  /*========== Font weight ==========*/
+  --font-small: 380;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-color);
+  font-weight: var(--font-semibold);
+}
+
+/*========== Navbar ==========*/
+.custom-link {
+  color: var(--primary-color);
+}
+
+.custom-navbar {
+  background-color: var(--secondary-color);
+  transition: 0.4s;
+  padding: 20px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-icon {
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+}
+
+.custom-button-report {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 15px;
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.custom-button-report:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+/*========== Home ==========*/
+.hero-section {
+  background-color: var(--primary-color);
+}
+
+.hero_one {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.hero_two {
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+}
+
+.hero_three {
+  font-size: var(--h5-font-size);
+  font-weight: 400;
+}
+
+.hero_two,
+.hero_one,
+.hero_three {
+  color: var(--secondary-color);
+}
+
+.custom-button-hero {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: var(--font-bold);
+  font-size: var(--h4-font-size);
+  border-radius: 40px;
+  border: 0;
+  padding: 10px 16px;
+}
+
+.custom-button-hero:hover {
+  color: var(--primary-color);
+}
