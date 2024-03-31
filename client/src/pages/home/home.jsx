@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import HeroSection from "./hero";
+import ConsultSection from "./consult";
 
 const HomePage = () => {
   useEffect(() => {
@@ -6,9 +8,10 @@ const HomePage = () => {
   });
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
-      Ini Home
-    </div>
+    <>
+      <HeroSection />
+      <ConsultSection />
+    </>
   );
 };
 

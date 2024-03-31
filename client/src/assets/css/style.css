@@ -54,11 +54,69 @@ h4 {
   color: var(--primary-color);
 }
 
+.custom-navbar {
+  background-color: var(--secondary-color);
+  transition: 0.4s;
+  padding: 20px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-icon {
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+}
+
 .custom-button-report {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 10px 16px;
+  border: 0;
   border-radius: 15px;
   font-size: var(--h5-font-size);
   font-weight: var(--font-semibold);
+}
+
+.custom-button-report:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+/*========== Home ==========*/
+.hero-section {
+  background-color: var(--primary-color);
+}
+
+.hero_one {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.hero_two {
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+}
+
+.hero_three {
+  font-size: var(--h5-font-size);
+  font-weight: 400;
+}
+
+.hero_two,
+.hero_one,
+.hero_three {
+  color: var(--secondary-color);
+}
+
+.custom-button-hero {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: var(--font-bold);
+  font-size: var(--h4-font-size);
+  border-radius: 40px;
+  border: 0;
+  padding: 10px 16px;
+}
+
+.custom-button-hero:hover {
+  color: var(--primary-color);
 }

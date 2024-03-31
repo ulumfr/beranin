@@ -1,24 +1,12 @@
 import React from "react";
-import {
-  Navbar as Navbar,
-  Container,
-  Image,
-  Nav,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Container, Image, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.png";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
-    <Navbar
-      expand="lg"
-      fixed="top"
-      style={{
-        height: "80px",
-        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-      }}
-    >
+    <Navbar expand="lg" fixed="top" className="custom-navbar">
       <Container>
         <Navbar.Brand href="/">
           <Image
@@ -33,9 +21,13 @@ const NavBar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        />
-        <Navbar.Collapse id="navbarSupportedContent">
-          <Nav className="mx-auto">
+        >
+          <div className="menu-icon">
+            <i className="bx bx-menu"></i>
+          </div>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="navbarSupportedContent" className="text-center">
+          <Nav className="mx-auto gap-2">
             <Nav.Item>
               <Nav.Link as={NavLink} to="/" className="fw-medium custom-link">
                 Home
@@ -62,10 +54,12 @@ const NavBar = () => {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav className="gap-2">
-            <Nav.Link as={NavLink} to="/login">
-              <span className="custom-button-report">REPORT!</span>
-            </Nav.Link>
+          <Nav>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Nav.Link as={NavLink} to="/login">
+                <span className="custom-button-report">REPORT!</span>
+              </Nav.Link>
+            </motion.div>
           </Nav>
         </Navbar.Collapse>
       </Container>
