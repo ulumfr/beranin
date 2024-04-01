@@ -125,10 +125,7 @@ h4 {
   border: 0;
   padding: 10px 16px;
 }
-.d-flex {
-  justify-items: center;
-  align-items: center;
-}
+
 .custom-button-hero:hover {
   color: var(--primary-color);
 }
@@ -207,15 +204,6 @@ h4 {
 
 .custom-imgabout {
   width: 100%;
-}
-
-.c-flex {
-  margin-left: 30px;
-  padding: 30px;
-}
-
-.custom-h2 {
-  flex-shrink: 0;
 }
 
 .custom-p2 {
