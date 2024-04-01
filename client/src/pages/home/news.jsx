@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import CardNews from "./cardNews/card";
 import Bully1 from "../../assets/img/bully1.png";
@@ -11,7 +12,7 @@ const NewsSection = () => {
   return (
     <div>
       <section
-        className="py-5 my-5 custom-section"
+        className="pt-5 mt-5 custom-section"
         style={{ color: "var(--secondary-color)" }}
       >
         <Container>
@@ -70,14 +71,27 @@ const NewsSection = () => {
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.8 }}
                 whileHover={{ scale: 1.2 }}
-                className="custom-button-news my-4 fw-bold"
+                className="custom-button-news my-5 fw-bold"
               >
-                View All News
+                <Link
+                  to="/news"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  View All News
+                </Link>
               </motion.button>
             </div>
           </div>
         </Container>
       </section>
+      <div
+        className="mb-5"
+        style={{
+          width: "100%",
+          height: "70px",
+          backgroundColor: "var(--tertiary-color)",
+        }}
+      />
     </div>
   );
 };

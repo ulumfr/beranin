@@ -81,6 +81,15 @@ h4 {
   color: var(--primary-color);
 }
 
+/*========== Footer ==========*/
+.custom-footer {
+  color: var(--primary-color);
+}
+
+.custom-footer:hover {
+  color: var(--tertiary-color);
+}
+
 /*========== Home ==========*/
 .custom-section {
   background-color: var(--primary-color);
