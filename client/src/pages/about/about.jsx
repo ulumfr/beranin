@@ -1,13 +1,17 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
+import ContentSection from "./content"
+import TeamSection from "./team"
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = "BeranIn | About";
+    document.title = "BeranIn | Home";
   });
+
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
-      Ini About
-    </div>
+    <>
+      <ContentSection />
+      <TeamSection />
+    </>
   );
 };
 

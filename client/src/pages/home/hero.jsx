@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div>
-      <section className="pt-5 mt-5 hero-section">
-        <Container className="pt-5 px-4">
+      <section className="pt-5 mt-5 custom-section">
+        <Container className="pt-5">
           <Row>
             <Col md={6} className="my-auto">
               <div className="hero_one pb-4">Selamat Datang di BeranIn</div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import HeroSection from "./hero";
 import ConsultSection from "./consult";
+import NewsSection from "./news";
 
 const HomePage = () => {
   useEffect(() => {
@@ -11,8 +12,10 @@ const HomePage = () => {
     <>
       <HeroSection />
       <ConsultSection />
+      <NewsSection />
     </>
   );
 };
 
 export default HomePage;
+    
