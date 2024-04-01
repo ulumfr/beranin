@@ -6,7 +6,7 @@ const AboutPage = () => {
   });
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      Ini About
+      Ini About apa
     </div>
   );
 };
