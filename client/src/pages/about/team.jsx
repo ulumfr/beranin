@@ -9,24 +9,117 @@ const Team = () => {
   return (
     <div>
       <section
-        className="team-1 mb-5"
+        className="p-5 mb-5"
         style={{ background: "var(--primary-color)" }}
       >
         <Container>
-          <div className="c-flex flex-column">
+          <div className="flex-column mb-5">
             <h2 className="ourt"> Our Team</h2>
             <span className="best1">
-              Our best team member that <br /> give you the best result
+              our best team member that <br /> give you the best result
             </span>
           </div>
-          <div className="imgteam">
-            <div className="yellow-box">
-              <img src={Dom} alt="Foto Dom" />
+          <div className="d-flex flex-row gap-4 ">
+            <div>
+              <img src={Dom} alt="Foto-Dom" className="img-team" />
+              <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
+                <span
+                  className="fw-bold fs-5"
+                  style={{ color: "var(--text-color)" }}
+                >
+                  Hadomuan Sitinjak
+                </span>
+                <span>Hustler</span>
+                <div className="my-3">
+                  <a href="https://www.instagram.com/bearnin/">
+                    <i className="bx bxl-instagram custom-team-logo fs-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/beranin/">
+                    <i className="bx bxl-linkedin custom-team-logo fs-2"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-
-            <img src={Ulum} alt="Foto Ulum" />
-            <img src={Yudha} alt="Foto Yudha" />
-            <img src={Nasrul} alt="Foto Nasrul" />
+            <div>
+              <img src={Ulum} alt="Foto-Ulum" className="img-team" />
+              <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
+                <span
+                  className="fw-bold fs-5"
+                  style={{ color: "var(--text-color)" }}
+                >
+                  Bahrul Ulum Fadhlur R
+                </span>
+                <span>Hacker</span>
+                <div className="my-3">
+                  <a href="https://www.instagram.com/bearnin/">
+                    <i className="bx bxl-instagram custom-team-logo fs-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/beranin/">
+                    <i className="bx bxl-linkedin custom-team-logo fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src={Yudha} alt="Foto-Yudha" className="img-team" />
+              <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
+                <span
+                  className="fw-bold fs-5"
+                  style={{ color: "var(--text-color)" }}
+                >
+                  Yudha Aryo Wicaksono
+                </span>
+                <span>Hacker</span>
+                <div className="my-3">
+                  <a href="https://www.instagram.com/bearnin/">
+                    <i className="bx bxl-instagram custom-team-logo fs-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/beranin/">
+                    <i className="bx bxl-linkedin custom-team-logo fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src={Nasrul} alt="Foto-Nasrul" className="img-team" />
+              <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
+                <span
+                  className="fw-bold fs-5"
+                  style={{ color: "var(--text-color)" }}
+                >
+                  Nasurl Hidayat
+                </span>
+                <span>Hipster</span>
+                <div className="my-3">
+                  <a href="https://www.instagram.com/bearnin/">
+                    <i className="bx bxl-instagram custom-team-logo fs-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/beranin/">
+                    <i className="bx bxl-linkedin custom-team-logo fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src={Nasrul} alt="Foto-Daffi" className="img-team" />
+              <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
+                <span
+                  className="fw-bold fs-5"
+                  style={{ color: "var(--text-color)" }}
+                >
+                  Keysar Khadaffi
+                </span>
+                <span>Hipster</span>
+                <div className="my-3">
+                  <a href="https://www.instagram.com/bearnin/">
+                    <i className="bx bxl-instagram custom-team-logo fs-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/beranin/">
+                    <i className="bx bxl-linkedin custom-team-logo fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

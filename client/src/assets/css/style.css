@@ -197,79 +197,71 @@ h4 {
   color: var(--secondary-color);
 }
 
-.custom-about {
-  color: var(--tertiary-color);
-  margin-top: 20px;
-}
-
-.custom-imgabout {
-  width: 100%;
-}
-
-.custom-p2 {
-  margin-top: 10px;
-}
-
-.e-flex {
-  background-color: #002247;
-}
-
-.custom-imgabout {
+.contact-ni {
+  width: 325px;
+  height: 370px;
+  background-color: var(--primary-color);
+  border-radius: 20px 0 20px 20px;
+  color: var(--secondary-color);
   position: relative;
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 255, 0.5);
-  backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
-.custom-imgabout::before {
+.contact-ni::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 255, 0.5);
-  backdrop-filter: blur(10px);
+  top: -11.5%;
+  right: -11.5%;
+  background-color: var(--secondary-color);
+  width: 20%;
+  height: 20%;
+  transform: rotate(45deg);
 }
 
-.team-1 {
-  padding: 10px;
+.custom-contact {
+  border-radius: 50px;
+  font-size: 10px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
-.imgteam {
-  width: 344;
-  height: 416;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-
-  img {
-    margin-right: 20px;
-    border-radius: 0px 0px 0px 50px;
-    position: relative;
-    z-index: 1;
-  }
+.custom-contact:hover {
+  color: var(--secondary-color);
 }
 
-.imgteam img:last-child {
-  margin-right: 0;
+.garis-kecil {
+  width: 2px;
+  height: 56px;
+  background-color: var(--text-color);
+}
+
+/*========== About ==========*/
+.custom-card-team {
+  background-color: var(--tertiary-color);
+  border-radius: 0 0 0 50px;
+  width: 344px;
+  height: 146px;
+  position: absolute;
+  margin-top: -146px;
+  opacity: 71%;
+}
+
+.img-team {
+  border-radius: 0 0 0 50px;
 }
 
 .ourt {
-  color: white;
-  text-align: left;
-  flex-shrink: 0;
+  color: var(--secondary-color);
+  font-size: var(--h3-font-size);
+  font-weight: bold;
 }
 
 .best1 {
-  color: white;
+  color: var(--secondary-color);
   font-size: 40px;
+  font-weight: bold;
 }
 
-.yellow-box {
-  width: 344px;
-  height: 146px;
-  color: rgba(233, 178, 7, 0.71);
-  border-radius: 0px 0px 0px 50px;
+.custom-team-logo {
+  color: var(--text-color);
 }

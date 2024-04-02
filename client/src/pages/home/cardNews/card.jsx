@@ -19,7 +19,11 @@ const CardNews = ({ foto, title, desc, cat }) => {
             {title}
           </span>
           <span style={{ fontSize: "var(--h6-font-size)" }}>{desc}</span>
-          <a href="/" className="mt-2" style={{ color: "var(--text-color)" }}>
+          <a
+            href="/detailnews"
+            className="mt-2"
+            style={{ color: "var(--text-color)" }}
+          >
             Read More
           </a>
         </div>

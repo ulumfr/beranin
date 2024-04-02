@@ -1,9 +1,19 @@
-import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Image, Modal } from "react-bootstrap";
 import ImageHero from "../../assets/img/hero.png";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  const handleShow = () => {
+    setShowModal(true);
+  };
+
   return (
     <div>
       <section className="pt-5 mt-5 custom-section">
@@ -22,6 +32,7 @@ const HeroSection = () => {
               </div>
               <motion.button
                 className="custom-button-hero mt-5"
+                onClick={handleShow}
                 initial={{ y: 100, scale: 0.5 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 0.8 }}
@@ -42,6 +53,20 @@ const HeroSection = () => {
           </Row>
         </Container>
       </section>
+      <Modal
+        show={showModal}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title className="text-center">LOGIN</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Belum Ready Untuk Form Login HEHEH</p>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
