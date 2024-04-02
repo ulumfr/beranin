@@ -197,6 +197,44 @@ h4 {
   color: var(--secondary-color);
 }
 
+.contact-ni {
+  width: 325px;
+  height: 370px;
+  background-color: var(--primary-color);
+  border-radius: 20px 0 20px 20px;
+  color: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-ni::before {
+  content: "";
+  position: absolute;
+  top: -11.5%;
+  right: -11.5%;
+  background-color: var(--secondary-color);
+  width: 20%;
+  height: 20%;
+  transform: rotate(45deg);
+}
+
+.custom-contact {
+  border-radius: 50px;
+  font-size: 10px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.custom-contact:hover {
+  color: var(--secondary-color);
+}
+
+.garis-kecil {
+  width: 2px;
+  height: 56px;
+  background-color: var(--text-color);
+}
+
 /*========== About ==========*/
 .custom-card-team {
   background-color: var(--tertiary-color);

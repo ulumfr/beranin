@@ -6,6 +6,7 @@ import NotFoundPage from "./pages/notfound";
 import HomePage from "./pages/home/home";
 import NewsPage from "./pages/news/news";
 import AboutPage from "./pages/about/about";
+import DetailNewsPage from "./pages/news/detail";
 import { AnimatePresence } from "framer-motion";
 
 const DefaultLayout = ({ children }) => (
@@ -38,6 +39,14 @@ const App = () => {
             element={
               <DefaultLayout>
                 <NewsPage />
+              </DefaultLayout>
+            }
+          />
+          <Route
+            path="/detailnews"
+            element={
+              <DefaultLayout>
+                <DetailNewsPage />
               </DefaultLayout>
             }
           />

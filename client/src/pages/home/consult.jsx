@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import ConsulImg from "../../assets/img/konsul.png";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Modal } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const ConsultSection = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  const handleShow = () => {
+    setShowModal(true);
+  };
   return (
     <div>
       <section className="py-5 my-5">
@@ -75,6 +84,7 @@ const ConsultSection = () => {
                   animate={{ y: 0, scale: 1 }}
                   transition={{ duration: 0.8 }}
                   whileHover={{ scale: 1.2 }}
+                  onClick={handleShow}
                   className="custom-button-consul mt-5"
                 >
                   Konsultasikan Sekarang
@@ -84,6 +94,20 @@ const ConsultSection = () => {
           </Row>
         </Container>
       </section>
+      <Modal
+        show={showModal}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title className="text-center">LOGIN</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Belum Ready Untuk Form Login HEHEH</p>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
