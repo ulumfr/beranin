@@ -5,15 +5,15 @@ import { Container } from "react-bootstrap";
 const content = () => {
   return (
     <>
-      <img src={Content} alt="" className="custom-imgabout" />
+      <img src={Content} alt="about-img" className="w-100" />
       <div className="d-flex flex-column">
         <Container>
-          <div className="custom-about text-center fw-bold mt-5">
+          <div className="text-center fw-bold mt-5">
             <h1>About Us</h1>
           </div>
           <div className="my-5">
             <h2>Bullying</h2>
-            <div className="custom-p1 text-justify">
+            <div>
               <p style={{ textAlign: "justify" }}>
                 Kasus Bullying sering terjadi di Indonesia, terutama di kalangan
                 siswa SMA. Hal itu dapat menghambat proses belajar di sekolah.
@@ -35,7 +35,7 @@ const content = () => {
                 anti-bullying.
               </p>
             </div>
-            <div className="custom-p2 text-justify mt-5 pt-4">
+            <div className="mt-5 pt-4">
               <h2>Objective</h2>
               <p style={{ textAlign: "justify" }}>
                 Kami menyediakan platform yang memungkinkan siswa melaporkan
