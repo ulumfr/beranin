@@ -4,7 +4,7 @@ import TeamSection from "./team"
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = "BeranIn | Home";
+    document.title = "BeranIn | About";
   });
 
   return (
