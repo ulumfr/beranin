@@ -4,6 +4,7 @@ import Dom from "../../assets/img/foto_dom.png";
 import Ulum from "../../assets/img/foto_ulum.png";
 import Yudha from "../../assets/img/foto_yudha.png";
 import Nasrul from "../../assets/img/foto_nasrul.png";
+import Daffi from "../../assets/img/foto_daffi.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -131,7 +132,7 @@ const Team = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div>
-                <img src={Nasrul} alt="Foto-Daffi" className="img-team" />
+                <img src={Daffi} alt="Foto-Daffi" className="img-team" />
                 <div className="custom-card-team d-flex align-items-center justify-content-center flex-column">
                   <span
                     className="fw-bold fs-5"
