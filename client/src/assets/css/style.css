@@ -190,7 +190,7 @@ h4 {
   border-radius: 40px;
   font-size: var(--h4-font-size);
   padding: 10px 44px;
-  width: 230px;
+  width: 250px;
 }
 
 .custom-button-news:hover {
@@ -266,23 +266,17 @@ h4 {
   color: var(--text-color);
 }
 
-/* .swiper {
-  width: 100%;
-  height: 100%;
+/*========== Form Login Register ==========*/
+.custom-input-form::placeholder {
+  color: var(--secondary2-color);
+  opacity: 0.5;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.custom-button-auth {
+  border-radius: 18px;
+  background-color: var(--tertiary-color);
+}
 
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+.custom-button-auth:hover {
+  color: var(--secondary-color);
+}
