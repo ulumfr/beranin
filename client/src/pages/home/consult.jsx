@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ConsulImg from "../../assets/img/konsul.png";
-import { Container, Row, Col, Image, Modal } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
+import LoginComponents from "../../components/modal/login";
 
 const ConsultSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -58,19 +59,19 @@ const ConsultSection = () => {
               </div>
 
               <div className="mt-4">
-                <div class="d-flex align-items-center gap-3 mb-3">
-                  <i class="bx bx-message-square-detail fs-2"></i>
-                  <div class="d-flex flex-column">
-                    <span class="fw-semibold fs-5">
+                <div className="d-flex align-items-center gap-3 mb-3">
+                  <i className="bx bx-message-square-detail fs-2"></i>
+                  <div className="d-flex flex-column">
+                    <span className="fw-semibold fs-5">
                       Konsultasikan dengan Gurumu
                     </span>
                     <span>kamu bisa memilih guru yang kamu inginkan</span>
                   </div>
                 </div>
 
-                <div class="d-flex align-items-center gap-3">
+                <div className="d-flex align-items-center gap-3">
                   <i className="bx bx-message-square-detail fs-2"></i>
-                  <div class="d-flex flex-column">
+                  <div className="d-flex flex-column">
                     <span className="fw-semibold fs-5">
                       Konsultasikan dengan Psikolog
                     </span>
@@ -94,20 +95,7 @@ const ConsultSection = () => {
           </Row>
         </Container>
       </section>
-      <Modal
-        show={showModal}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title className="text-center">LOGIN</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Belum Ready Untuk Form Login HEHEH</p>
-        </Modal.Body>
-      </Modal>
+      {showModal && <LoginComponents closeModal={handleClose} />}
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Navbar, Container, Image, Nav, Modal } from "react-bootstrap";
+import { Navbar, Container, Image, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import { motion } from "framer-motion";
+import LoginComponents from "./modal/login";
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -76,20 +77,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
 
-      <Modal
-        show={showModal}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title className="text-center">LOGIN</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Belum Ready Untuk Form Login HEHEH</p>
-        </Modal.Body>
-      </Modal>
+      {showModal && <LoginComponents closeModal={handleClose} />}
     </>
   );
 };

@@ -73,7 +73,7 @@ const Footer = () => {
                   <i className="bx bxl-youtube custom-footer fs-1"></i>
                 </a>
                 <a href="https://twitter.com/beranin">
-                  <i class="bx bxl-twitter custom-footer fs-1"></i>
+                  <i className="bx bxl-twitter custom-footer fs-1"></i>
                 </a>
               </div>
             </div>

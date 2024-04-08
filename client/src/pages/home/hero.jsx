@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Image, Modal } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import ImageHero from "../../assets/img/hero.png";
 import { motion } from "framer-motion";
+import LoginComponents from "../../components/modal/login";
 
 const HeroSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -53,20 +54,7 @@ const HeroSection = () => {
           </Row>
         </Container>
       </section>
-      <Modal
-        show={showModal}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title className="text-center">LOGIN</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Belum Ready Untuk Form Login HEHEH</p>
-        </Modal.Body>
-      </Modal>
+      {showModal && <LoginComponents closeModal={handleClose} />}
     </div>
   );
 };

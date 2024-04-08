@@ -121,7 +121,7 @@ const ContactSection = () => {
                         <i className="bx bxl-instagram custom-contact fs-2 p-2"></i>
                       </a>
                       <a href="https://twitter.com/beranin">
-                        <i class="bx bxl-twitter custom-contact fs-2 p-2"></i>
+                        <i className="bx bxl-twitter custom-contact fs-2 p-2"></i>
                       </a>
                       <a href="https://youtube.com/beranin">
                         <i className="bx bxl-youtube custom-contact fs-2 p-2"></i>
