@@ -280,3 +280,24 @@ h4 {
 .custom-button-auth:hover {
   color: var(--secondary-color);
 }
+
+@media (max-width: 600px) {
+  .custom-foto-berita {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .custom-latest {
+    width: 93.5%;
+    height: 250px;
+  }
+
+  .cek-garis-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-ni {
+    width: 100%;
+  }
+}

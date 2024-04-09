@@ -18,31 +18,36 @@ const ConsultSection = () => {
     <div>
       <section className="py-5 my-5">
         <Container>
-          <div className="d-flex justify-content-center gap-4">
-            <div className="d-flex align-items-center gap-2 ">
-              <i className="bx bxs-time-five fs-3 custom-icon-bg p-2"></i>
-              <span className="custom-link fw-bold">24/7 Avabilaility</span>
-            </div>
-            <div className="d-flex align-items-center gap-2">
-              <i className="bx bx-headphone fs-3 custom-icon-bg p-2"></i>
-              <span className="custom-link fw-bold">Fast Respon</span>
-            </div>
-            <div className="d-flex align-items-center gap-2">
-              <i className="bx bxs-lock fs-3 custom-icon-bg p-2"></i>
-              <span className="custom-link fw-bold">Anonymous & Privacy</span>
-            </div>
-          </div>
+          <Row>
+            <Col
+              xs={12}
+              className="d-flex flex-wrap justify-content-start justify-content-md-center gap-4"
+            >
+              <div className="d-flex align-items-center gap-2 ">
+                <i className="bx bxs-time-five fs-3 custom-icon-bg p-2"></i>
+                <span className="custom-link fw-bold">24/7 Availability</span>
+              </div>
+              <div className="d-flex align-items-center gap-2">
+                <i className="bx bx-headphone fs-3 custom-icon-bg p-2"></i>
+                <span className="custom-link fw-bold">Fast Response</span>
+              </div>
+              <div className="d-flex align-items-center gap-2">
+                <i className="bx bxs-lock fs-3 custom-icon-bg p-2"></i>
+                <span className="custom-link fw-bold">Anonymous & Privacy</span>
+              </div>
+            </Col>
+          </Row>
 
           <Row className="mt-5 pt-5">
             <Col md={6}>
               <Image
                 src={ConsulImg}
                 alt="consul-img"
-                className="custom-img-consul"
+                className="custom-img-consul w-75"
               />
             </Col>
             <Col md={6}>
-              <div className="d-flex gap-3">
+              <div className="d-flex gap-3 mt-4">
                 <div className="kotak-kecil" />
                 <span
                   className="fw-normal fs-4 text-center"

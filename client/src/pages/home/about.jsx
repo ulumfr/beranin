@@ -22,6 +22,7 @@ const AboutSection = () => {
                   <img
                     src={ImgAbout}
                     alt="img-about"
+                    className="w-75"
                     style={{
                       borderRadius: "0px 30px 180px 50px",
                       boxShadow: "4px 6px 6px 0px rgba(0, 0, 0, 0.25)",

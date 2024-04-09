@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 const Team = () => {
   return (
     <div>
-      <section className="p-5" style={{ background: "var(--primary-color)" }}>
+      <section className="py-5" style={{ background: "var(--primary-color)" }}>
         <Container>
           <div className="flex-column mb-5">
             <h2 className="ourt"> Our Team</h2>
