@@ -3,7 +3,7 @@ import React from "react";
 const CardNews = ({ foto, title, desc, cat }) => {
   return (
     <div className="custom-card-news">
-      <img src={foto} alt="foto" style={{ borderRadius: "20px" }} />
+      <img src={foto} alt="foto" style={{ borderRadius: "20px" }} className="custom-foto-berita"/>
       <div className="custom-latest">
         <div className="custom-title-card d-flex justify-content-center align-items-center fw-semibold">
           {cat}

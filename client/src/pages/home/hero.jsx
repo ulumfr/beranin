@@ -19,7 +19,7 @@ const HeroSection = () => {
     <div>
       <section className="pt-5 mt-5 custom-section">
         <Container className="pt-5">
-          <Row>
+          <Row className="mt-2">
             <Col md={6} className="my-auto">
               <div className="hero_one pb-4">Selamat Datang di BeranIn</div>
               <div className="hero_two pb-2">
@@ -32,7 +32,7 @@ const HeroSection = () => {
                 kekerasan dan intimidasi
               </div>
               <motion.button
-                className="custom-button-hero mt-5"
+                className="custom-button-hero my-5"
                 onClick={handleShow}
                 initial={{ y: 100, scale: 0.5 }}
                 animate={{ y: 0, scale: 1 }}
@@ -43,12 +43,12 @@ const HeroSection = () => {
               </motion.button>
             </Col>
 
-            <Col md={6} className="home_gambar">
+            <Col md={6} className="d-flex justify-content-center mt-5">
               <Image
                 src={ImageHero}
                 alt="foto_arul"
                 draggable="false"
-                width={"525px"}
+                className="w-75"
               />
             </Col>
           </Row>

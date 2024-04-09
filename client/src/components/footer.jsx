@@ -13,12 +13,12 @@ const Footer = () => {
     >
       <Container>
         <Row>
-          <Col md={4}>
+          <Col md={4} className="text-center text-md-start">
             <NavLink to="/">
               <img src={logo} alt="logo-beranin" draggable="false" />
             </NavLink>
             <div
-              className="my-3"
+              className="my-3 cek-garis-footer"
               style={{
                 width: "238px",
                 height: "7px",
